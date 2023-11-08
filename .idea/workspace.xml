@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbebfa17-922c-4f72-aa6c-e75ce44a370a" name="Changes" comment="added">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/IMG_Gen.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/tmp files.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/TTM.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Project/TTM.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/techno.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Project/techno.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/techno_fade.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Project/techno_fade.wav" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1699197360358</updated>
       <workItem from="1699197361929" duration="12138000" />
-      <workItem from="1699421100419" duration="18954000" />
+      <workItem from="1699421100419" duration="22627000" />
     </task>
     <task id="LOCAL-00001" summary="new AI models and tests">
       <option name="closed" value="true" />
