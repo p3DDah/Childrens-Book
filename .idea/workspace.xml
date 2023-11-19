@@ -5,10 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbebfa17-922c-4f72-aa6c-e75ce44a370a" name="Changes" comment="added">
+      <change afterPath="$PROJECT_DIR$/Project/LLM_Samantha.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/LLM_test.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project/stable-diffusion" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Childrens-Book.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Childrens-Book.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/TTM.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Project/TTM.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/techno.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Project/techno.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/techno_fade.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Project/techno_fade.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pres2/Alice.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pres2/Code.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pres2/Code.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pres2/First Prototype.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pres2/Unbenanntes Dokument.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/LLM.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Project/LLM.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/SDM.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Project/SDXL.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/Translation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Project/Translation.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,29 +58,35 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2XlIhZDJDspvtiDolf9AX7MpA4j" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/phili/OneDrive/Desktop/Studium/Master STUTTI/Semester 3 (WS2023_24)/Generative AI/Childrens-Book/Project&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\phili\OneDrive\Desktop\Studium\Master STUTTI\Semester 3 (WS2023_24)\Generative AI\Childrens-Book\Project" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -79,6 +97,14 @@
       <updated>1699197360358</updated>
       <workItem from="1699197361929" duration="12138000" />
       <workItem from="1699421100419" duration="22627000" />
+      <workItem from="1699525218391" duration="5037000" />
+      <workItem from="1699870076435" duration="7000" />
+      <workItem from="1700015812670" duration="2821000" />
+      <workItem from="1700024773237" duration="3171000" />
+      <workItem from="1700209829251" duration="3440000" />
+      <workItem from="1700213462373" duration="11142000" />
+      <workItem from="1700235755890" duration="20874000" />
+      <workItem from="1700258322225" duration="4752000" />
     </task>
     <task id="LOCAL-00001" summary="new AI models and tests">
       <option name="closed" value="true" />
@@ -120,6 +146,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/Project/stable-diffusion" />
+    </ignored-roots>
     <MESSAGE value="new AI models and tests" />
     <MESSAGE value="added translation model with downloadable languages for faster execution" />
     <MESSAGE value="added" />
