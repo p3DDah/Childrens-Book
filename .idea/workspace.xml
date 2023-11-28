@@ -4,50 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbebfa17-922c-4f72-aa6c-e75ce44a370a" name="Changes" comment="added">
-      <change afterPath="$PROJECT_DIR$/Low Level/Children's book View.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/.idea/Project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/.ipynb_checkpoints/LLM_Samantha-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/djangoProject/.idea/djangoProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/djangoProject/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/djangoProject/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/djangoProject/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/djangoProject/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/djangoProject/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/djangoProject/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/djangoProject/Book/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/djangoProject/Book/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/djangoProject/Book/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/djangoProject/Book/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/djangoProject/Book/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/djangoProject/Book/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/djangoProject/Book/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/djangoProject/Book/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/djangoProject/Book/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/djangoProject/Book/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/djangoProject/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/djangoProject/djangoProject/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/djangoProject/djangoProject/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/djangoProject/djangoProject/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/djangoProject/djangoProject/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/djangoProject/djangoProject/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/djangoProject/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Childrens-Book.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Childrens-Book.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/LLM.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/LLM_Samantha.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Project/LLM_Samantha.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/MAIN.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/MAIN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/Storyline/The two kingdoms.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/Storyline/The two kingdoms.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project/Storyline/The two kingdoms.twee" beforeDir="false" />
-    </list>
+    <list default="true" id="dbebfa17-922c-4f72-aa6c-e75ce44a370a" name="Changes" comment="added" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,25 +52,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/phili/OneDrive/Desktop/Studium/Master STUTTI/Semester 3 (WS2023_24)/Generative AI/Childrens-Book/djangoProject/djangoProject/settings.py",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "com.jetbrains.django.DjangoModulesConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/phili/OneDrive/Desktop/Studium/Master STUTTI/Semester 3 (WS2023_24)/Generative AI/Childrens-Book/djangoProject/djangoProject/settings.py&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.django.DjangoModulesConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\phili\OneDrive\Desktop\Studium\Master STUTTI\Semester 3 (WS2023_24)\Generative AI\Childrens-Book\Project" />
@@ -166,6 +123,7 @@
       <workItem from="1700258322225" duration="4752000" />
       <workItem from="1700305391170" duration="33164000" />
       <workItem from="1700386297277" duration="6419000" />
+      <workItem from="1700664003460" duration="112000" />
     </task>
     <task id="LOCAL-00001" summary="new AI models and tests">
       <option name="closed" value="true" />
