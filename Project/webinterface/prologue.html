@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prologue</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Background image */
+        body {
+            background-image: url('BACKGROUND.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Center the content within the container */
+        .custom-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        /* Square button styles */
+        .square-button {
+            position: fixed;
+            top: 20px;
+            right: 90px; /* Adjust the right position to your preference */
+            width: 100px;
+            height: 50px;
+            background-color: lightblue;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        /* Round button styles */
+        .round-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: lightgrey;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        /* X symbol styles */
+        .x-symbol {
+            color: red;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body class="d-flex align-items-center justify-content-center" style="min-height: 100vh; background-image: url('BACKGROUND.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+
+    <!--book picture-->
+    <div class="custom-container text-center">
+        <img src="book1.png" alt="Centered Image" class="img-fluid">
+    </div>
+
+
+    <div>
+         <!-- Sound button -->
+        <a href="#" class="square-button" id="soundButton">
+            Sound on
+        </a>
+        <a href="index.html" class="round-button">
+            <div class="x-symbol">X</div>
+        </a>
+    </div>
+
+    <!-- Sound settings modal -->
+    <div id="soundSettingsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSoundSettingsModal()">&times;</span>
+            <h2>Sound Settings</h2>
+            <!-- Add your sound settings options here -->
+        </div>
+    </div>
+
+    <!-- Add Bootstrap JS and Popper.js links here if needed -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Handle click event for the Sound button
+        var soundButton = document.getElementById('soundButton');
+        soundButton.addEventListener('click', function () {
+            if (soundButton.textContent === 'Sound on') {
+                soundButton.textContent = 'Sound off';
+                soundButton.style.backgroundColor = 'lightgrey';
+            } else {
+                soundButton.textContent = 'Sound on';
+                soundButton.style.backgroundColor = 'lightblue';
+            }
+        });
+    </script>
+</body>
+</html>
