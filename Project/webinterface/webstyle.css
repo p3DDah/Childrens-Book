@@ -1,0 +1,82 @@
+body {
+    background-image: url('BACKGROUND.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    scrollbar-width: auto;
+    scrollbar-color: #888 transparent; /* Thumb color and track color */
+}
+
+/* Custom scrollbar for the body in WebKit browsers (e.g., Chrome, Safari) */
+body::-webkit-scrollbar-track {
+    background-color: transparent; /* Light gray track */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #888; /* Darker gray thumb */
+    border-radius: 10px; /* Rounded corners for the thumb */
+    border: 4px solid transparent;
+    background-clip: padding-box;
+}
+
+body::-webkit-scrollbar {
+    width: 15px; /* Width of the vertical scrollbar */
+    height: 10px; /* Height of the horizontal scrollbar */
+}
+
+#startbutton {
+background-color: limegreen;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+/* Optional: Add hover effect */
+#startbutton:hover {
+    background-color: #01a801;
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.config-form {
+    position: relative;
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2)), url('paper.jpeg');
+    background-size: cover;
+    border-radius: 10px;
+    margin: auto;
+    max-width: 800px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.35);
+    padding-bottom: 20px;
+}
+
+.scrollable-content {
+    max-height: 500px; /* Adjust this value based on your form size */
+    overflow-y: auto; /* Enables vertical scrolling */
+    scrollbar-width: auto; /* "auto" or "thin" */
+    scrollbar-color: #888 #f5f5f5; /* thumb and track color */
+}
+
+/* Custom scrollbar for WebKit browsers */
+.scrollable-content::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+    border: 4px solid transparent;
+    background-clip: padding-box;
+}
+
+.scrollable-content::-webkit-scrollbar {
+    width: 15px;
+    height: 10px;
+}

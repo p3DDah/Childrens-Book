@@ -3,4 +3,4 @@ from .models import ToDoItem
 
 class AllToDos(ListView):
     model = ToDoItem
-    template_name = "template/index.html"
+    template_name = "template/config.html"
