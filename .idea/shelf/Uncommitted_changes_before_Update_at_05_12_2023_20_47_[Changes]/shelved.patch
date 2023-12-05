@@ -1,0 +1,572 @@
+Index: Project/webinterface/index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!doctype html>\r\n<html lang=\"en\">\r\n  <head>\r\n    <meta charset=\"utf-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n    <title>Configuration Form</title>\r\n    <script src=\"https://code.jquery.com/jquery-3.5.1.slim.min.js\"></script>\r\n    <script src=\"https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js\"></script>\r\n\r\n    <!-- Use Bootstrap 5 CSS -->\r\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css\" rel=\"stylesheet\">\r\n    <!-- Use Bootstrap 5 JavaScript -->\r\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js\"></script>\r\n\r\n    <script src=\"main.js\"></script> \r\n    <style>\r\n        body {\r\n            background-image: url('BACKGROUND.png');\r\n            background-size: cover;\r\n            background-position: center;\r\n            background-repeat: no-repeat;\r\n            min-height: 100vh;\r\n            margin: 0;\r\n            padding: 0;\r\n        }\r\n         \r\n         #startbutton {\r\n            background-color: limegreen;\r\n            color: white;\r\n            padding: 10px 20px;\r\n            border: none;\r\n            border-radius: 5px;\r\n            cursor: pointer;\r\n        }\r\n        \r\n        /* Optional: Add hover effect */\r\n        #startbutton:hover {\r\n            background-color: darkgreen;\r\n        }\r\n         \r\n        \r\n        .form-group {\r\n            margin-bottom: 20px;\r\n        }\r\n        \r\n        .config-form {\r\n            background-color: #f5f5f5; /* Light beige color */\r\n            border-radius: 10px; /* Rounded corners */\r\n            padding: 40px; /* Padding for inside the box */\r\n            margin: auto; /* Center the box horizontally */\r\n            max-width: 800px; /* Set a maximum width for the box */\r\n        }\r\n    </style>\r\n</head>\r\n  <body>\r\n\r\n    <div class=\"container mt-4\">\r\n        <div class=\"config-form\">\r\n            <div class=\"text-center\">\r\n                <h2>Configuration Form</h2>\r\n            </div>\r\n\r\n            <form class=\"mt-4\" id=\"myForm\" onsubmit=\"showLoadingModal(); return validateForm(event);\" action=\"prologue.html\" method=\"POST\">\r\n                <div class=\"form-group col-6 mx-auto\">\r\n                    <label for=\"name\">Name:</label>\r\n                    <input type=\"text\" class=\"form-control\" id=\"name\" placeholder=\"Enter your name\" required>\r\n                </div>\r\n\r\n                <div class=\"form-group col-6 mx-auto\">\r\n                    <label for=\"gender\">Gender:</label>\r\n                    <select class=\"form-control\" id=\"gender\" required>\r\n                        <option value=\"male\">Male</option>\r\n                        <option value=\"female\">Female</option>\r\n                        <option value=\"other\">Other</option>\r\n                    </select>\r\n                </div>\r\n\r\n                <div class=\"form-group col-6 mx-auto\">\r\n                    <label for=\"country\">Country:</label>\r\n                    <input type=\"text\" class=\"form-control\" id=\"country\" placeholder=\"Enter your country\" required>\r\n                </div>\r\n\r\n                <div class=\"form-group col-6 mx-auto\">\r\n                    <label for=\"color\">Favorite Color:</label>\r\n                    <input type=\"color\" class=\"form-control\" id=\"color\" required>\r\n                </div>\r\n\r\n                <div class=\"form-group col-6 mx-auto\">\r\n                    <label for=\"season\">Season:</label>\r\n                    <select class=\"form-control col-6\" id=\"season\" required>\r\n                        <option value=\"disabled selected\">Choose a preferred season</option>\r\n                        <option value=\"summer\">Summer</option>\r\n                        <option value=\"fall\">Fall</option>\r\n                        <option value=\"winter\">Winter</option>\r\n                        <option value=\"spring\">Spring</option>\r\n                    </select>\r\n                </div>\r\n\r\n                <div class=\"form-group col-6 mx-auto\">\r\n                    <label for=\"chapters\">Number of Chapters:</label>\r\n                    <input type=\"number\" class=\"form-control\" id=\"chapters\" min=\"3\" max=\"15\" placeholder=\"Choose between 3 and 15 chapters\" required>\r\n                </div>\r\n\r\n                <div class=\"form-group mb-4 col-6 mx-auto\">\r\n                    <label for=\"choices\">Number of Choices:</label>\r\n                    <input type=\"number\" class=\"form-control\" id=\"choices\" min=\"2\" max=\"5\" placeholder=\"Choose between two and five choices\" required>\r\n                </div>\r\n\r\n                <div class=\"text-center\">\r\n                    <button type=\"submit\" id=\"startbutton\" class=\"btn btn-primary\" onclick=\"redirectToNextPage()\">Start</button>\r\n                </div>\r\n            </form>\r\n        </div>\r\n    </div>\r\n\r\n    <div class=\"modal\" id=\"loadingModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"loadingModalLabel\" aria-hidden=\"true\">\r\n        <div class=\"modal-dialog\" role=\"document\">\r\n            <div class=\"modal-content\">\r\n                <div class=\"modal-body\">\r\n                    <p>Loading...</p>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n\r\n  </body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Project/webinterface/index.html b/Project/webinterface/index.html
+--- a/Project/webinterface/index.html	(revision 906190b076022d1da6ebd7141e705ab5a20ad073)
++++ b/Project/webinterface/index.html	(date 1701776607325)
+@@ -12,6 +12,12 @@
+     <!-- Use Bootstrap 5 JavaScript -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+ 
++    <!-- Select2 CSS -->
++    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
++
++    <!-- Select2 JavaScript -->
++    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
++
+     <script src="main.js"></script> 
+     <style>
+         body {
+@@ -60,7 +66,7 @@
+                 <h2>Configuration Form</h2>
+             </div>
+ 
+-            <form class="mt-4" id="myForm" onsubmit="showLoadingModal(); return validateForm(event);" action="prologue.html" method="POST">
++            <form class="mt-4" id="myForm" onsubmit="return validateForm(event);" action="prologue.html" method="POST">
+                 <div class="form-group col-6 mx-auto">
+                     <label for="name">Name:</label>
+                     <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+@@ -77,7 +83,7 @@
+ 
+                 <div class="form-group col-6 mx-auto">
+                     <label for="country">Country:</label>
+-                    <input type="text" class="form-control" id="country" placeholder="Enter your country" required>
++                    <div id="country-container"></div>
+                 </div>
+ 
+                 <div class="form-group col-6 mx-auto">
+@@ -88,7 +94,7 @@
+                 <div class="form-group col-6 mx-auto">
+                     <label for="season">Season:</label>
+                     <select class="form-control col-6" id="season" required>
+-                        <option value="disabled selected">Choose a preferred season</option>
++                        <option value="0" disabled selected>Choose a preferred season</option>
+                         <option value="summer">Summer</option>
+                         <option value="fall">Fall</option>
+                         <option value="winter">Winter</option>
+@@ -96,18 +102,21 @@
+                     </select>
+                 </div>
+ 
++
+                 <div class="form-group col-6 mx-auto">
+                     <label for="chapters">Number of Chapters:</label>
+                     <input type="number" class="form-control" id="chapters" min="3" max="15" placeholder="Choose between 3 and 15 chapters" required>
++                    <span id="error-message" style="color: red;"></span>
+                 </div>
+ 
+                 <div class="form-group mb-4 col-6 mx-auto">
+                     <label for="choices">Number of Choices:</label>
+                     <input type="number" class="form-control" id="choices" min="2" max="5" placeholder="Choose between two and five choices" required>
++                    <span id="choices-error-message" style="color: red;"></span>
+                 </div>
+ 
+                 <div class="text-center">
+-                    <button type="submit" id="startbutton" class="btn btn-primary" onclick="redirectToNextPage()">Start</button>
++                    <button type="submit" id="startbutton" class="btn btn-primary">Start</button>
+                 </div>
+             </form>
+         </div>
+Index: Project/webinterface/main.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\nfunction showLoadingModal() {\r\n        // Show the loading modal\r\n        $('#loadingModal').modal('show');\r\n}\r\n    \r\nfunction validateForm(event) {\r\n    // Prevent the default form submission behavior\r\n    event.preventDefault();\r\n\r\n    // Check if the required fields are filled\r\n    if ($('#name').val() === '' || $('#gender').val() === '' || $('#country').val() === '' || $('#color').val() === '' || $('#season').val() === '' || $('#chapters').val() === '' || $('#choices').val() === '') {\r\n        alert('Please fill in all required fields.');\r\n        return false; // Prevent form submission\r\n    }\r\n\r\n    // If all required fields are filled, proceed with the form submission\r\n    redirectToNextPage();\r\n}\r\n\r\nfunction redirectToNextPage() { \r\n    // After the form is submitted, hide the loading modal\r\n    $('#loadingModal').modal('hide');\r\n\r\n    // Redirect to the next page\r\n    setTimeout(function() {\r\n        window.location.href = 'prologue.html';\r\n    }, 0);\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Project/webinterface/main.js b/Project/webinterface/main.js
+--- a/Project/webinterface/main.js	(revision 906190b076022d1da6ebd7141e705ab5a20ad073)
++++ b/Project/webinterface/main.js	(date 1701776706022)
+@@ -8,22 +8,68 @@
+     // Prevent the default form submission behavior
+     event.preventDefault();
+ 
+-    // Check if the required fields are filled
+-    if ($('#name').val() === '' || $('#gender').val() === '' || $('#country').val() === '' || $('#color').val() === '' || $('#season').val() === '' || $('#chapters').val() === '' || $('#choices').val() === '') {
++    // Check if all required fields are filled
++    var allFieldsFilled = $('#name').val() !== '' &&
++                          $('#gender').val() !== '' &&
++                          $('#country')[0].selectedIndex !== 0 &&
++                          $('#color').val() !== '' &&
++                          $('#season')[0].selectedIndex !== 0 &&
++                          $('#chapters').val() !== '' &&
++                          $('#choices').val() !== '';
++
++    if (!allFieldsFilled) {
+         alert('Please fill in all required fields.');
+-        return false; // Prevent form submission
++        return false; // Prevent redirecting to the next page
+     }
++
++    // Show the loading modal if all fields are filled
++    showLoadingModal();
+ 
+     // If all required fields are filled, proceed with the form submission
+     redirectToNextPage();
+ }
+ 
+ function redirectToNextPage() { 
+-    // After the form is submitted, hide the loading modal
++    // After the form is submitted and all fields are filled, hide the loading modal
+     $('#loadingModal').modal('hide');
+ 
+     // Redirect to the next page
+     setTimeout(function() {
+         window.location.href = 'prologue.html';
+     }, 0);
+-}
+\ No newline at end of file
++}
++
++function validateNumericInput(inputFieldId, errorMessageId, minVal, maxVal) {
++    var inputField = document.getElementById(inputFieldId);
++    var value = inputField.value;
++    var errorMessage = document.getElementById(errorMessageId);
++
++    // Check if the input is empty or out of range
++    if (value < minVal || value > maxVal) {
++        errorMessage.textContent = `Please enter a number between ${minVal} and ${maxVal}.`;
++        inputField.value = ''; // Clear the input field
++    } else {
++        errorMessage.textContent = ''; // Clear the message when the input is valid
++    }
++}
++
++document.addEventListener('DOMContentLoaded', function() {
++    // Validate 'chapters' input
++    document.getElementById('chapters').addEventListener('change', function() {
++        validateNumericInput('chapters', 'error-message', 3, 15);
++    });
++
++    // Validate 'choices' input
++    document.getElementById('choices').addEventListener('change', function() {
++        validateNumericInput('choices', 'choices-error-message', 2, 5);
++    });
++});
++
++document.addEventListener('DOMContentLoaded', function() {
++    fetch('assets/country-codes.html')
++        .then(response => response.text())
++        .then(html => {
++            document.getElementById('country-container').innerHTML = html;
++        })
++        .catch(error => console.error('Error loading country data:', error));
++});
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"dbebfa17-922c-4f72-aa6c-e75ce44a370a\" name=\"Changes\" comment=\"added\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"DjangoConsoleOptions\" custom-start-script=\"import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)\">\r\n    <option name=\"myCustomStartScript\" value=\"import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Jupyter Notebook\" />\r\n        <option value=\"Python Script\" />\r\n        <option value=\"HTML File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"FlaskConsoleOptions\" custom-start-script=\"import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\\nApp: %s [%s]\\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))\">\r\n    <envs>\r\n      <env key=\"FLASK_APP\" value=\"app\" />\r\n    </envs>\r\n    <option name=\"myCustomStartScript\" value=\"import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\\nApp: %s [%s]\\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))\" />\r\n    <option name=\"myEnvs\">\r\n      <map>\r\n        <entry key=\"FLASK_APP\" value=\"app\" />\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n    <option name=\"ROOT_SYNC\" value=\"DONT_SYNC\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;customColor&quot;: &quot;&quot;,\r\n  &quot;associatedIndex&quot;: 3\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2XlIhZDJDspvtiDolf9AX7MpA4j\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,\r\n    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;main&quot;,\r\n    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/phili/OneDrive/Desktop/Studium/Master STUTTI/Semester 3 (WS2023_24)/Generative AI/Childrens-Book/djangoProject/djangoProject/settings.py&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.django.DjangoModulesConfigurable&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\phili\\OneDrive\\Desktop\\Studium\\Master STUTTI\\Semester 3 (WS2023_24)\\Generative AI\\Childrens-Book\\Project\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"DjangoProject\" type=\"Python.DjangoServer\" factoryName=\"Django server\">\r\n      <module name=\"Childrens-Book\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n        <env name=\"DJANGO_SETTINGS_MODULE\" value=\"djangoProject.settings\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"C:\\Users\\phili\\miniconda3\\envs\\ChildrensBook\\python.exe\" />\r\n      <option name=\"SDK_NAME\" value=\"ChildrensBook\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"false\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <option name=\"launchJavascriptDebuger\" value=\"false\" />\r\n      <option name=\"port\" value=\"8000\" />\r\n      <option name=\"host\" value=\"\" />\r\n      <option name=\"additionalOptions\" value=\"\" />\r\n      <option name=\"browserUrl\" value=\"http://127.0.0.1:8000/\" />\r\n      <option name=\"runTestServer\" value=\"false\" />\r\n      <option name=\"runNoReload\" value=\"false\" />\r\n      <option name=\"useCustomRunCommand\" value=\"false\" />\r\n      <option name=\"customRunCommand\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"dbebfa17-922c-4f72-aa6c-e75ce44a370a\" name=\"Changes\" comment=\"\" />\r\n      <created>1699197360358</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1699197360358</updated>\r\n      <workItem from=\"1699197361929\" duration=\"12138000\" />\r\n      <workItem from=\"1699421100419\" duration=\"22627000\" />\r\n      <workItem from=\"1699525218391\" duration=\"5037000\" />\r\n      <workItem from=\"1699870076435\" duration=\"7000\" />\r\n      <workItem from=\"1700015812670\" duration=\"2821000\" />\r\n      <workItem from=\"1700024773237\" duration=\"3171000\" />\r\n      <workItem from=\"1700209829251\" duration=\"3440000\" />\r\n      <workItem from=\"1700213462373\" duration=\"11142000\" />\r\n      <workItem from=\"1700235755890\" duration=\"20874000\" />\r\n      <workItem from=\"1700258322225\" duration=\"4752000\" />\r\n      <workItem from=\"1700305391170\" duration=\"33164000\" />\r\n      <workItem from=\"1700386297277\" duration=\"6419000\" />\r\n      <workItem from=\"1700664003460\" duration=\"112000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"new AI models and tests\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1699421192472</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1699421192472</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"added translation model with downloadable languages for faster execution\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1699426374103</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1699426374103</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"added\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1699444478451</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1699444478451</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"added\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1699444658640</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1699444658640</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"added\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1700379565480</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700379565480</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"added\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1700379591549</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700379591549</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"7\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\r\n    <ignored-roots>\r\n      <path value=\"$PROJECT_DIR$/Project/stable-diffusion\" />\r\n    </ignored-roots>\r\n    <MESSAGE value=\"new AI models and tests\" />\r\n    <MESSAGE value=\"added translation model with downloadable languages for faster execution\" />\r\n    <MESSAGE value=\"added\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"added\" />\r\n  </component>\r\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\r\n    <SUITE FILE_PATH=\"coverage/Children_s_Book$Test__.coverage\" NAME=\"Test:  Coverage Results\" MODIFIED=\"1700386779242\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"\" />\r\n    <SUITE FILE_PATH=\"coverage/Children_s_Book$manage.coverage\" NAME=\"manage Coverage Results\" MODIFIED=\"1700387889155\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$/Django\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 906190b076022d1da6ebd7141e705ab5a20ad073)
++++ b/.idea/workspace.xml	(date 1701776836029)
+@@ -4,7 +4,14 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="dbebfa17-922c-4f72-aa6c-e75ce44a370a" name="Changes" comment="added" />
++    <list default="true" id="dbebfa17-922c-4f72-aa6c-e75ce44a370a" name="Changes" comment="added">
++      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Low Level/INTEL.docx" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Project/webinterface/assets/country-codes.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Project/webinterface/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/webinterface/index.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Project/webinterface/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project/webinterface/main.js" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -52,31 +59,37 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+-    &quot;last_opened_file_path&quot;: &quot;C:/Users/phili/OneDrive/Desktop/Studium/Master STUTTI/Semester 3 (WS2023_24)/Generative AI/Childrens-Book/djangoProject/djangoProject/settings.py&quot;,
+-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.django.DjangoModulesConfigurable&quot;,
+-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "ASKED_ADD_EXTERNAL_FILES": "true",
++    "DefaultHtmlFileTemplate": "HTML File",
++    "RunOnceActivity.OpenProjectViewOnStart": "true",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
++    "WebServerToolWindowFactoryState": "false",
++    "git-widget-placeholder": "main",
++    "ignore.virus.scanning.warn.message": "true",
++    "last_opened_file_path": "C:/Users/phili/OneDrive/Desktop/Studium/Master STUTTI/Semester 3 (WS2023_24)/Generative AI/Childrens-Book/djangoProject/djangoProject/settings.py",
++    "node.js.detected.package.eslint": "true",
++    "node.js.detected.package.tslint": "true",
++    "node.js.selected.package.eslint": "(autodetect)",
++    "node.js.selected.package.tslint": "(autodetect)",
++    "settings.editor.selected.configurable": "liveEdit",
++    "vue.rearranger.settings.migration": "true"
+   }
+-}</component>
++}]]></component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+       <recent name="C:\Users\phili\OneDrive\Desktop\Studium\Master STUTTI\Semester 3 (WS2023_24)\Generative AI\Childrens-Book\Project" />
++    </key>
++    <key name="MoveFile.RECENT_KEYS">
++      <recent name="C:\Users\phili\OneDrive\Desktop\Studium\Master STUTTI\Semester 3 (WS2023_24)\Generative AI\Childrens-Book\Project\webinterface\assets" />
+     </key>
+   </component>
+-  <component name="RunManager">
++  <component name="RunManager" selected="JavaScript Debug.index.html">
++    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Children's Book/Project/webinterface/index.html" useBuiltInWebServerPort="true">
++      <method v="2" />
++    </configuration>
+     <configuration name="DjangoProject" type="Python.DjangoServer" factoryName="Django server">
+       <module name="Childrens-Book" />
+       <option name="INTERPRETER_OPTIONS" value="" />
+@@ -102,6 +115,11 @@
+       <option name="customRunCommand" value="" />
+       <method v="2" />
+     </configuration>
++    <recent_temporary>
++      <list>
++        <item itemvalue="JavaScript Debug.index.html" />
++      </list>
++    </recent_temporary>
+   </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+@@ -124,6 +142,7 @@
+       <workItem from="1700305391170" duration="33164000" />
+       <workItem from="1700386297277" duration="6419000" />
+       <workItem from="1700664003460" duration="112000" />
++      <workItem from="1701754578889" duration="10854000" />
+     </task>
+     <task id="LOCAL-00001" summary="new AI models and tests">
+       <option name="closed" value="true" />
+Index: Project/webinterface/assets/country-codes.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Project/webinterface/assets/country-codes.html b/Project/webinterface/assets/country-codes.html
+new file mode 100644
+--- /dev/null	(date 1701776501494)
++++ b/Project/webinterface/assets/country-codes.html	(date 1701776501494)
+@@ -0,0 +1,274 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <title>Title</title>
++</head>
++<body>
++<select class="form-control" id="country" required>
++                        <option value="0" label="Select a country" disabled selected>Select a country ... </option>
++                        <optgroup id="country-optgroup-Africa" label="Africa">
++                            <option value="DZ" label="Algeria">Algeria</option>
++                            <option value="AO" label="Angola">Angola</option>
++                            <option value="BJ" label="Benin">Benin</option>
++                            <option value="BW" label="Botswana">Botswana</option>
++                            <option value="BF" label="Burkina Faso">Burkina Faso</option>
++                            <option value="BI" label="Burundi">Burundi</option>
++                            <option value="CM" label="Cameroon">Cameroon</option>
++                            <option value="CV" label="Cape Verde">Cape Verde</option>
++                            <option value="CF" label="Central African Republic">Central African Republic</option>
++                            <option value="TD" label="Chad">Chad</option>
++                            <option value="KM" label="Comoros">Comoros</option>
++                            <option value="CG" label="Congo - Brazzaville">Congo - Brazzaville</option>
++                            <option value="CD" label="Congo - Kinshasa">Congo - Kinshasa</option>
++                            <option value="CI" label="Côte d’Ivoire">Côte d’Ivoire</option>
++                            <option value="DJ" label="Djibouti">Djibouti</option>
++                            <option value="EG" label="Egypt">Egypt</option>
++                            <option value="GQ" label="Equatorial Guinea">Equatorial Guinea</option>
++                            <option value="ER" label="Eritrea">Eritrea</option>
++                            <option value="ET" label="Ethiopia">Ethiopia</option>
++                            <option value="GA" label="Gabon">Gabon</option>
++                            <option value="GM" label="Gambia">Gambia</option>
++                            <option value="GH" label="Ghana">Ghana</option>
++                            <option value="GN" label="Guinea">Guinea</option>
++                            <option value="GW" label="Guinea-Bissau">Guinea-Bissau</option>
++                            <option value="KE" label="Kenya">Kenya</option>
++                            <option value="LS" label="Lesotho">Lesotho</option>
++                            <option value="LR" label="Liberia">Liberia</option>
++                            <option value="LY" label="Libya">Libya</option>
++                            <option value="MG" label="Madagascar">Madagascar</option>
++                            <option value="MW" label="Malawi">Malawi</option>
++                            <option value="ML" label="Mali">Mali</option>
++                            <option value="MR" label="Mauritania">Mauritania</option>
++                            <option value="MU" label="Mauritius">Mauritius</option>
++                            <option value="YT" label="Mayotte">Mayotte</option>
++                            <option value="MA" label="Morocco">Morocco</option>
++                            <option value="MZ" label="Mozambique">Mozambique</option>
++                            <option value="NA" label="Namibia">Namibia</option>
++                            <option value="NE" label="Niger">Niger</option>
++                            <option value="NG" label="Nigeria">Nigeria</option>
++                            <option value="RW" label="Rwanda">Rwanda</option>
++                            <option value="RE" label="Réunion">Réunion</option>
++                            <option value="SH" label="Saint Helena">Saint Helena</option>
++                            <option value="SN" label="Senegal">Senegal</option>
++                            <option value="SC" label="Seychelles">Seychelles</option>
++                            <option value="SL" label="Sierra Leone">Sierra Leone</option>
++                            <option value="SO" label="Somalia">Somalia</option>
++                            <option value="ZA" label="South Africa">South Africa</option>
++                            <option value="SD" label="Sudan">Sudan</option>
++                            <option value="SZ" label="Swaziland">Swaziland</option>
++                            <option value="ST" label="São Tomé and Príncipe">São Tomé and Príncipe</option>
++                            <option value="TZ" label="Tanzania">Tanzania</option>
++                            <option value="TG" label="Togo">Togo</option>
++                            <option value="TN" label="Tunisia">Tunisia</option>
++                            <option value="UG" label="Uganda">Uganda</option>
++                            <option value="EH" label="Western Sahara">Western Sahara</option>
++                            <option value="ZM" label="Zambia">Zambia</option>
++                            <option value="ZW" label="Zimbabwe">Zimbabwe</option>
++                        </optgroup>
++                        <optgroup id="country-optgroup-Americas" label="Americas">
++                            <option value="AI" label="Anguilla">Anguilla</option>
++                            <option value="AG" label="Antigua and Barbuda">Antigua and Barbuda</option>
++                            <option value="AR" label="Argentina">Argentina</option>
++                            <option value="AW" label="Aruba">Aruba</option>
++                            <option value="BS" label="Bahamas">Bahamas</option>
++                            <option value="BB" label="Barbados">Barbados</option>
++                            <option value="BZ" label="Belize">Belize</option>
++                            <option value="BM" label="Bermuda">Bermuda</option>
++                            <option value="BO" label="Bolivia">Bolivia</option>
++                            <option value="BR" label="Brazil">Brazil</option>
++                            <option value="VG" label="British Virgin Islands">British Virgin Islands</option>
++                            <option value="CA" label="Canada">Canada</option>
++                            <option value="KY" label="Cayman Islands">Cayman Islands</option>
++                            <option value="CL" label="Chile">Chile</option>
++                            <option value="CO" label="Colombia">Colombia</option>
++                            <option value="CR" label="Costa Rica">Costa Rica</option>
++                            <option value="CU" label="Cuba">Cuba</option>
++                            <option value="DM" label="Dominica">Dominica</option>
++                            <option value="DO" label="Dominican Republic">Dominican Republic</option>
++                            <option value="EC" label="Ecuador">Ecuador</option>
++                            <option value="SV" label="El Salvador">El Salvador</option>
++                            <option value="FK" label="Falkland Islands">Falkland Islands</option>
++                            <option value="GF" label="French Guiana">French Guiana</option>
++                            <option value="GL" label="Greenland">Greenland</option>
++                            <option value="GD" label="Grenada">Grenada</option>
++                            <option value="GP" label="Guadeloupe">Guadeloupe</option>
++                            <option value="GT" label="Guatemala">Guatemala</option>
++                            <option value="GY" label="Guyana">Guyana</option>
++                            <option value="HT" label="Haiti">Haiti</option>
++                            <option value="HN" label="Honduras">Honduras</option>
++                            <option value="JM" label="Jamaica">Jamaica</option>
++                            <option value="MQ" label="Martinique">Martinique</option>
++                            <option value="MX" label="Mexico">Mexico</option>
++                            <option value="MS" label="Montserrat">Montserrat</option>
++                            <option value="AN" label="Netherlands Antilles">Netherlands Antilles</option>
++                            <option value="NI" label="Nicaragua">Nicaragua</option>
++                            <option value="PA" label="Panama">Panama</option>
++                            <option value="PY" label="Paraguay">Paraguay</option>
++                            <option value="PE" label="Peru">Peru</option>
++                            <option value="PR" label="Puerto Rico">Puerto Rico</option>
++                            <option value="BL" label="Saint Barthélemy">Saint Barthélemy</option>
++                            <option value="KN" label="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
++                            <option value="LC" label="Saint Lucia">Saint Lucia</option>
++                            <option value="MF" label="Saint Martin">Saint Martin</option>
++                            <option value="PM" label="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
++                            <option value="VC" label="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
++                            <option value="SR" label="Suriname">Suriname</option>
++                            <option value="TT" label="Trinidad and Tobago">Trinidad and Tobago</option>
++                            <option value="TC" label="Turks and Caicos Islands">Turks and Caicos Islands</option>
++                            <option value="VI" label="U.S. Virgin Islands">U.S. Virgin Islands</option>
++                            <option value="US" label="United States">United States</option>
++                            <option value="UY" label="Uruguay">Uruguay</option>
++                            <option value="VE" label="Venezuela">Venezuela</option>
++                        </optgroup>
++                        <optgroup id="country-optgroup-Asia" label="Asia">
++                            <option value="AF" label="Afghanistan">Afghanistan</option>
++                            <option value="AM" label="Armenia">Armenia</option>
++                            <option value="AZ" label="Azerbaijan">Azerbaijan</option>
++                            <option value="BH" label="Bahrain">Bahrain</option>
++                            <option value="BD" label="Bangladesh">Bangladesh</option>
++                            <option value="BT" label="Bhutan">Bhutan</option>
++                            <option value="BN" label="Brunei">Brunei</option>
++                            <option value="KH" label="Cambodia">Cambodia</option>
++                            <option value="CN" label="China">China</option>
++                            <option value="GE" label="Georgia">Georgia</option>
++                            <option value="HK" label="Hong Kong SAR China">Hong Kong SAR China</option>
++                            <option value="IN" label="India">India</option>
++                            <option value="ID" label="Indonesia">Indonesia</option>
++                            <option value="IR" label="Iran">Iran</option>
++                            <option value="IQ" label="Iraq">Iraq</option>
++                            <option value="IL" label="Israel">Israel</option>
++                            <option value="JP" label="Japan">Japan</option>
++                            <option value="JO" label="Jordan">Jordan</option>
++                            <option value="KZ" label="Kazakhstan">Kazakhstan</option>
++                            <option value="KW" label="Kuwait">Kuwait</option>
++                            <option value="KG" label="Kyrgyzstan">Kyrgyzstan</option>
++                            <option value="LA" label="Laos">Laos</option>
++                            <option value="LB" label="Lebanon">Lebanon</option>
++                            <option value="MO" label="Macau SAR China">Macau SAR China</option>
++                            <option value="MY" label="Malaysia">Malaysia</option>
++                            <option value="MV" label="Maldives">Maldives</option>
++                            <option value="MN" label="Mongolia">Mongolia</option>
++                            <option value="MM" label="Myanmar [Burma]">Myanmar [Burma]</option>
++                            <option value="NP" label="Nepal">Nepal</option>
++                            <option value="NT" label="Neutral Zone">Neutral Zone</option>
++                            <option value="KP" label="North Korea">North Korea</option>
++                            <option value="OM" label="Oman">Oman</option>
++                            <option value="PK" label="Pakistan">Pakistan</option>
++                            <option value="PS" label="Palestinian Territories">Palestinian Territories</option>
++                            <option value="YD" label="People's Democratic Republic of Yemen">People's Democratic Republic of Yemen</option>
++                            <option value="PH" label="Philippines">Philippines</option>
++                            <option value="QA" label="Qatar">Qatar</option>
++                            <option value="SA" label="Saudi Arabia">Saudi Arabia</option>
++                            <option value="SG" label="Singapore">Singapore</option>
++                            <option value="KR" label="South Korea">South Korea</option>
++                            <option value="LK" label="Sri Lanka">Sri Lanka</option>
++                            <option value="SY" label="Syria">Syria</option>
++                            <option value="TW" label="Taiwan">Taiwan</option>
++                            <option value="TJ" label="Tajikistan">Tajikistan</option>
++                            <option value="TH" label="Thailand">Thailand</option>
++                            <option value="TL" label="Timor-Leste">Timor-Leste</option>
++                            <option value="TR" label="Turkey">Turkey</option>
++                            <option value="TM" label="Turkmenistan">Turkmenistan</option>
++                            <option value="AE" label="United Arab Emirates">United Arab Emirates</option>
++                            <option value="UZ" label="Uzbekistan">Uzbekistan</option>
++                            <option value="VN" label="Vietnam">Vietnam</option>
++                            <option value="YE" label="Yemen">Yemen</option>
++                        </optgroup>
++                        <optgroup id="country-optgroup-Europe" label="Europe">
++                            <option value="AL" label="Albania">Albania</option>
++                            <option value="AD" label="Andorra">Andorra</option>
++                            <option value="AT" label="Austria">Austria</option>
++                            <option value="BY" label="Belarus">Belarus</option>
++                            <option value="BE" label="Belgium">Belgium</option>
++                            <option value="BA" label="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
++                            <option value="BG" label="Bulgaria">Bulgaria</option>
++                            <option value="HR" label="Croatia">Croatia</option>
++                            <option value="CY" label="Cyprus">Cyprus</option>
++                            <option value="CZ" label="Czech Republic">Czech Republic</option>
++                            <option value="DK" label="Denmark">Denmark</option>
++                            <option value="DD" label="East Germany">East Germany</option>
++                            <option value="EE" label="Estonia">Estonia</option>
++                            <option value="FO" label="Faroe Islands">Faroe Islands</option>
++                            <option value="FI" label="Finland">Finland</option>
++                            <option value="FR" label="France">France</option>
++                            <option value="DE" label="Germany">Germany</option>
++                            <option value="GI" label="Gibraltar">Gibraltar</option>
++                            <option value="GR" label="Greece">Greece</option>
++                            <option value="GG" label="Guernsey">Guernsey</option>
++                            <option value="HU" label="Hungary">Hungary</option>
++                            <option value="IS" label="Iceland">Iceland</option>
++                            <option value="IE" label="Ireland">Ireland</option>
++                            <option value="IM" label="Isle of Man">Isle of Man</option>
++                            <option value="IT" label="Italy">Italy</option>
++                            <option value="JE" label="Jersey">Jersey</option>
++                            <option value="LV" label="Latvia">Latvia</option>
++                            <option value="LI" label="Liechtenstein">Liechtenstein</option>
++                            <option value="LT" label="Lithuania">Lithuania</option>
++                            <option value="LU" label="Luxembourg">Luxembourg</option>
++                            <option value="MK" label="Macedonia">Macedonia</option>
++                            <option value="MT" label="Malta">Malta</option>
++                            <option value="FX" label="Metropolitan France">Metropolitan France</option>
++                            <option value="MD" label="Moldova">Moldova</option>
++                            <option value="MC" label="Monaco">Monaco</option>
++                            <option value="ME" label="Montenegro">Montenegro</option>
++                            <option value="NL" label="Netherlands">Netherlands</option>
++                            <option value="NO" label="Norway">Norway</option>
++                            <option value="PL" label="Poland">Poland</option>
++                            <option value="PT" label="Portugal">Portugal</option>
++                            <option value="RO" label="Romania">Romania</option>
++                            <option value="RU" label="Russia">Russia</option>
++                            <option value="SM" label="San Marino">San Marino</option>
++                            <option value="RS" label="Serbia">Serbia</option>
++                            <option value="CS" label="Serbia and Montenegro">Serbia and Montenegro</option>
++                            <option value="SK" label="Slovakia">Slovakia</option>
++                            <option value="SI" label="Slovenia">Slovenia</option>
++                            <option value="ES" label="Spain">Spain</option>
++                            <option value="SJ" label="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
++                            <option value="SE" label="Sweden">Sweden</option>
++                            <option value="CH" label="Switzerland">Switzerland</option>
++                            <option value="UA" label="Ukraine">Ukraine</option>
++                            <option value="SU" label="Union of Soviet Socialist Republics">Union of Soviet Socialist Republics</option>
++                            <option value="GB" label="United Kingdom">United Kingdom</option>
++                            <option value="VA" label="Vatican City">Vatican City</option>
++                            <option value="AX" label="Åland Islands">Åland Islands</option>
++                        </optgroup>
++                        <optgroup id="country-optgroup-Oceania" label="Oceania">
++                            <option value="AS" label="American Samoa">American Samoa</option>
++                            <option value="AQ" label="Antarctica">Antarctica</option>
++                            <option value="AU" label="Australia">Australia</option>
++                            <option value="BV" label="Bouvet Island">Bouvet Island</option>
++                            <option value="IO" label="British Indian Ocean Territory">British Indian Ocean Territory</option>
++                            <option value="CX" label="Christmas Island">Christmas Island</option>
++                            <option value="CC" label="Cocos [Keeling] Islands">Cocos [Keeling] Islands</option>
++                            <option value="CK" label="Cook Islands">Cook Islands</option>
++                            <option value="FJ" label="Fiji">Fiji</option>
++                            <option value="PF" label="French Polynesia">French Polynesia</option>
++                            <option value="TF" label="French Southern Territories">French Southern Territories</option>
++                            <option value="GU" label="Guam">Guam</option>
++                            <option value="HM" label="Heard Island and McDonald Islands">Heard Island and McDonald Islands</option>
++                            <option value="KI" label="Kiribati">Kiribati</option>
++                            <option value="MH" label="Marshall Islands">Marshall Islands</option>
++                            <option value="FM" label="Micronesia">Micronesia</option>
++                            <option value="NR" label="Nauru">Nauru</option>
++                            <option value="NC" label="New Caledonia">New Caledonia</option>
++                            <option value="NZ" label="New Zealand">New Zealand</option>
++                            <option value="NU" label="Niue">Niue</option>
++                            <option value="NF" label="Norfolk Island">Norfolk Island</option>
++                            <option value="MP" label="Northern Mariana Islands">Northern Mariana Islands</option>
++                            <option value="PW" label="Palau">Palau</option>
++                            <option value="PG" label="Papua New Guinea">Papua New Guinea</option>
++                            <option value="PN" label="Pitcairn Islands">Pitcairn Islands</option>
++                            <option value="WS" label="Samoa">Samoa</option>
++                            <option value="SB" label="Solomon Islands">Solomon Islands</option>
++                            <option value="GS" label="South Georgia and the South Sandwich Islands">South Georgia and the South Sandwich Islands</option>
++                            <option value="TK" label="Tokelau">Tokelau</option>
++                            <option value="TO" label="Tonga">Tonga</option>
++                            <option value="TV" label="Tuvalu">Tuvalu</option>
++                            <option value="UM" label="U.S. Minor Outlying Islands">U.S. Minor Outlying Islands</option>
++                            <option value="VU" label="Vanuatu">Vanuatu</option>
++                            <option value="WF" label="Wallis and Futuna">Wallis and Futuna</option>
++                        </optgroup>
++                    </select>
++</body>
++</html>
+\ No newline at end of file
+Index: .idea/dataSources.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/dataSources.xml b/.idea/dataSources.xml
+new file mode 100644
+--- /dev/null	(date 1701754608544)
++++ b/.idea/dataSources.xml	(date 1701754608544)
+@@ -0,0 +1,14 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
++    <data-source source="LOCAL" name="Django default" uuid="b0fbe8ac-7584-42c6-88dd-c6aa2dd11883">
++      <driver-ref>sqlite.xerial</driver-ref>
++      <synchronize>true</synchronize>
++      <imported>true</imported>
++      <remarks>$PROJECT_DIR$/djangoProject/djangoProject/settings.py</remarks>
++      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
++      <jdbc-url>jdbc:sqlite:C:\Users\phili\OneDrive\Desktop\Studium\Master STUTTI\Semester 3 (WS2023_24)\Generative AI\Childrens-Book\djangoProject\db.sqlite3</jdbc-url>
++      <working-dir>$ProjectFileDir$</working-dir>
++    </data-source>
++  </component>
++</project>
+\ No newline at end of file
