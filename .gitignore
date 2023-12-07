@@ -142,3 +142,4 @@
 /Project/stable-diffusion/assets/v1-variants-scores.jpg
 /Project/stable-diffusion/ldm/modules/losses/vqperceptual.py
 /Project/stable-diffusion/ldm/modules/x_transformer.py
+*.argosmodel
