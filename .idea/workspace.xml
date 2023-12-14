@@ -5,36 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbebfa17-922c-4f72-aa6c-e75ce44a370a" name="Changes" comment="added">
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/BACKGROUND.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/FrontEnd/App.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/FrontEnd/BACKGROUND.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project/paper.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProject/.idea/djangoProject.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProject/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProject/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProject/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProject/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProject/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProject/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProject/Book/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProject/Book/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProject/Book/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProject/Book/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProject/Book/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProject/Book/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProject/Book/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProject/Book/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProject/Book/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProject/Book/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProject/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProject/djangoProject/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProject/djangoProject/asgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProject/djangoProject/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProject/djangoProject/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProject/djangoProject/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProject/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/BACKGROUND.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/FrontEnd/App.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/FrontEnd/BACKGROUND.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/MAIN.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/MAIN.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/NoteBooks/LLM.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Project/NoteBooks/LLM.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/NoteBooks/SDXL.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Project/NoteBooks/SDXL.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/NoteBooks/TTM.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Project/NoteBooks/TTM.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/NoteBooks/Translation.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Project/NoteBooks/Translation.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/paper.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/scripts/images/result_chap1_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/scripts/images/result_chap2_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/scripts/images/result_chap3_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/scripts/images/result_chap4_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/scripts/init.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/scripts/init.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/scripts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/scripts/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/scripts/pipe.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Project/scripts/pipe.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/scripts/sounds/result_chap1_1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/scripts/sounds/result_chap2_1.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/scripts/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/scripts/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/scripts/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/webinterface/assets/country-codes.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/webinterface/assets/country-codes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/webinterface/config.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/webinterface/config.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/webinterface/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Project/webinterface/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/webinterface/prologue.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project/webinterface/prologue.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/webinterface/webstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/Project/webinterface/webstyle.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +68,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -84,26 +86,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/phili/OneDrive/Desktop/Studium/Master STUTTI/Semester 3 (WS2023_24)/Generative AI/Childrens-Book/Project",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "liveEdit",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/phili/OneDrive/Desktop/Studium/Master STUTTI/Semester 3 (WS2023_24)/Generative AI/Childrens-Book/Project&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;liveEdit&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\phili\OneDrive\Desktop\Studium\Master STUTTI\Semester 3 (WS2023_24)\Generative AI\Childrens-Book\Project" />
@@ -192,6 +194,8 @@
       <workItem from="1700386297277" duration="6419000" />
       <workItem from="1700664003460" duration="112000" />
       <workItem from="1701754578889" duration="28621000" />
+      <workItem from="1701933141744" duration="33000" />
+      <workItem from="1702120656079" duration="593000" />
     </task>
     <task id="LOCAL-00001" summary="new AI models and tests">
       <option name="closed" value="true" />
